@@ -5,4 +5,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .orange {
   color: rgb(241,144,52);
+  color: rgb(241, 52, 52);
+}
+
+.v-middle {
+  vertical-align: middle;
 }
