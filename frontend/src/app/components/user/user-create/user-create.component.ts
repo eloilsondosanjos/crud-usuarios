@@ -8,11 +8,12 @@ import { UserService } from '../user.service';
   templateUrl: './user-create.component.html',
   styleUrls: ['./user-create.component.css']
 })
+
 export class UserCreateComponent implements OnInit {
 
   user: User = {
     name: 'Maria de Lourdes da Silva Coelho Rocha',
-    age: 29
+    birthOfDate: new Date('12-06-1992')
   }
 
   constructor(private userService: UserService, private router: Router) { }

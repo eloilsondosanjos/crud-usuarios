@@ -1,3 +1,17 @@
+<mat-card>
+  <mat-card-title>
+    Novo Usuário
+  </mat-card-title>
+</mat-card>
+<form>
+  <mat-form-field>
+    <input matInput placeholder="Nome" [(ngModel)]="user.name" name="name">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Data de nascimento" [(ngModel)]="user.birthOfDate" name="birthOfDate" type="date">
+  </mat-form-field>
+</form>
+
 <button mat-raised-button (click)="createUser()" color="primary">
   Salvar
 </button>
