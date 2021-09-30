@@ -11,8 +11,8 @@ import { UserService } from '../user.service';
 export class UserCreateComponent implements OnInit {
 
   user: User = {
-    name: 'Elomar END',
-    age: 33
+    name: 'Maria de Lourdes da Silva Coelho Rocha',
+    age: 29
   }
 
   constructor(private userService: UserService, private router: Router) { }
