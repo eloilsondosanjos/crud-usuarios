@@ -13,7 +13,8 @@ export class UserCreateComponent implements OnInit {
 
   user: User = {
     name: 'Maria de Lourdes da Silva Coelho Rocha',
-    birthOfDate: new Date('12-06-1992')
+    birthOfDate: new Date('12-06-1992'),
+    wage: 1045.00
   }
 
   constructor(private userService: UserService, private router: Router) { }
@@ -30,7 +31,7 @@ export class UserCreateComponent implements OnInit {
     })
   }
 
-  cancelUser(): void {
+  cancel(): void {
     this.router.navigate(['/users'])
   }
 }

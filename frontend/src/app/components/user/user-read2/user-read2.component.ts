@@ -17,7 +17,7 @@ export class UserRead2Component implements AfterViewInit {
   dataSource: UserRead2DataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'name', 'birthOfDate'];
+  displayedColumns = ['id', 'name', 'birthOfDate', 'wage'];
 
   constructor() {
     this.dataSource = new UserRead2DataSource();

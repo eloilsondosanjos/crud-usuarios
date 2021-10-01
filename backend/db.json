@@ -3,30 +3,36 @@
     {
       "id": 1,
       "name": "Eloilson dos Anjos Rocha",
+      "wage": 2418.00,
       "birthOfDate": "1988-01-11"
     },
     {
       "id": 2,
       "name": "Emilly Sophia da Silva Rocha",
+      "wage": 150.50,
       "birthOfDate": "2011-10-15"
     },
     {
       "id": 3,
       "name": "Nicolas da Silva Rocha",
+      "wage": 120.50,
       "birthOfDate": "2017-09-02"
     },
     {
       "id": 4,
       "name": "David da Silva Rocha",
+      "wage": 90.50,
       "birthOfDate": "2020-08-02"
     },
     {
       "name": "Maria de Lourdes da S. C. Rocha",
+      "wage": 1045.00,
       "birthOfDate": "1992-12-06",
       "id": 5
     },
     {
-      "name": "Leozinho do jax ",
+      "name": "Leozinho do Sax ",
+      "wage": 3500.18,
       "birthOfDate": "1995-01-19",
       "id": 6
     }

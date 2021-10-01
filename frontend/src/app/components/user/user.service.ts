@@ -28,4 +28,16 @@ export class UserService {
   read(): Observable<User[]> {
     return this.http.get<User[]>(this.baseUrlAPI)
   }
+
+  readById(id: string): Observable<User> {
+    const url = `${this.baseUrlAPI}/${id}`
+
+    return this.http.get<User>(url)
+  }
+
+  update(user: User): Observable<User> {
+    const url = `${this.baseUrlAPI}/${user.id}`
+
+    return this.http.put<User>(url, user)
+  }
 }
