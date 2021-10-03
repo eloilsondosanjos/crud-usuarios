@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { UserCreateComponent } from './components/user/user-create/user-create.component';
+import { UserDeleteComponent } from './components/user/user-delete/user-delete.component';
 import { UserUpdateComponent } from './components/user/user-update/user-update.component';
 import { HomeComponent } from './views/home/home.component';
 import { UsersCrudComponent } from './views/users-crud/users-crud.component';
@@ -21,6 +22,10 @@ const routes: Routes = [{
 {
   path: "users/update/:id",
   component: UserUpdateComponent
+},
+{
+  path: "users/delete/:id",
+  component: UserDeleteComponent
 }
 ];
 

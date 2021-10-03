@@ -1,30 +1,29 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { identity } from 'rxjs';
 import { User } from '../user.model';
 import { UserService } from '../user.service';
 
 @Component({
-  selector: 'app-user-update',
-  templateUrl: './user-update.component.html',
-  styleUrls: ['./user-update.component.css']
+  selector: 'app-user-delete',
+  templateUrl: './user-delete.component.html',
+  styleUrls: ['./user-delete.component.css']
 })
-export class UserUpdateComponent implements OnInit {
+export class UserDeleteComponent implements OnInit {
 
   user!: User
+
   constructor(private userService: UserService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-
     const id = this.route.snapshot.paramMap.get('id')
     this.userService.readById(id!).subscribe(user => {
       this.user = user
     })
   }
 
-  updateUser(): void {
-    this.userService.update(this.user).subscribe(() => {
-      this.userService.showMessage('Usuário atualizado com sucesso')
+  deleteUser(): void {
+    this.userService.delete(this.user.id!).subscribe(() => {
+      this.userService.showMessage('User deletado com sucesso')
       this.router.navigate(['/users'])
     })
   }

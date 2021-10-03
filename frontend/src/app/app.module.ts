@@ -23,12 +23,12 @@ import { HeaderComponent } from './components/template/header/header.component';
 import { NavComponent } from './components/template/nav/nav.component';
 import { UserCreateComponent } from './components/user/user-create/user-create.component';
 import { UserReadComponent } from './components/user/user-read/user-read.component';
-import { UserRead2Component } from './components/user/user-read2/user-read2.component';
 import { UserUpdateComponent } from './components/user/user-update/user-update.component';
 import { ForDirective } from './directives/for.directive';
 import { OrangeDirective } from './directives/orange.directive';
 import { HomeComponent } from './views/home/home.component';
 import { UsersCrudComponent } from './views/users-crud/users-crud.component';
+import { UserDeleteComponent } from './components/user/user-delete/user-delete.component';
 
 
 registerLocaleData(localePt)
@@ -45,8 +45,8 @@ registerLocaleData(localePt)
     ForDirective,
     UserCreateComponent,
     UserReadComponent,
-    UserRead2Component,
-    UserUpdateComponent
+    UserUpdateComponent,
+    UserDeleteComponent
   ],
   imports: [
     BrowserModule,

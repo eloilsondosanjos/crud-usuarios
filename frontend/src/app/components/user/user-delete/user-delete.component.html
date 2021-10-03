@@ -1,0 +1,24 @@
+<mat-card>
+  <mat-card-title>
+    Excluir Usuário
+  </mat-card-title>
+</mat-card>
+<form>
+  <mat-form-field>
+    <input matInput placeholder="Nome" [value]="user.name" name="name" disabled>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Data de nascimento" [value]="user.birthOfDate" name="birthOfDate" type="date" disabled>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Remuneração" [value]="user.wage" name="wage" disabled>
+  </mat-form-field>
+</form>
+
+<button mat-raised-button (click)="deleteUser()" color="warn">
+  Excluir
+</button>
+
+<button mat-raised-button (click)="cancel()">
+  Cancelar
+</button>
